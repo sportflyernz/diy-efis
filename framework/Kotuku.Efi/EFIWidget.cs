@@ -55,6 +55,7 @@ namespace Kotuku.Efi
     private SliderGauge _leftf;
     private SliderGauge _rightf;
     private AnnunciatorWidget _annunciators;
+    private MarqueeWidget _marquee;
 
     private OverlayWidget _overlay;
 
@@ -211,7 +212,9 @@ namespace Kotuku.Efi
       _annunciators.NameColor = Colors.Magenta;
       _annunciators.BackgroundColor = Colors.Black;
 
-      _overlay = new OverlayWidget(this, WindowRect, 109);
+      _marquee = new MarqueeWidget(this, Rect.Create(0, 220, 140, 240), 109, 0);
+
+      _overlay = new OverlayWidget(this, WindowRect, 110);
       _overlay.ZOrder = 100;
 
 

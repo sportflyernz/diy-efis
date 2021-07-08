@@ -12,6 +12,7 @@ SRC= \
 	TempWidget.cs \
 	SliderGauge.cs \
 	Annunciator.cs \
+	Marquee.cs \
 	Properties/AssemblyInfo.cs
 
 LIBS=-reference:../assemblies/mscorlib.dll;../assemblies/CanFly.Photon.dll;../assemblies/CanFly.Proton.dll
